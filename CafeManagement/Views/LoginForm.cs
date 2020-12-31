@@ -37,7 +37,7 @@ namespace CafeManagement.Views
                     }
                     if (r.Category == 1)
                     {
-                        new CustomerForm().Show();
+                        new CustomerForm(r);
                     }
                 }
                 else

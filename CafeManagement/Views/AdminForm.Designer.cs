@@ -47,12 +47,12 @@
             // 
             // buttonAdditem
             // 
-            this.buttonAdditem.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonAdditem.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdditem.ForeColor = System.Drawing.Color.Green;
+            this.buttonAdditem.BackColor = System.Drawing.Color.Teal;
+            this.buttonAdditem.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdditem.ForeColor = System.Drawing.Color.White;
             this.buttonAdditem.Location = new System.Drawing.Point(23, 74);
             this.buttonAdditem.Name = "buttonAdditem";
-            this.buttonAdditem.Size = new System.Drawing.Size(178, 43);
+            this.buttonAdditem.Size = new System.Drawing.Size(200, 43);
             this.buttonAdditem.TabIndex = 1;
             this.buttonAdditem.Text = "Add Item";
             this.buttonAdditem.UseVisualStyleBackColor = false;
@@ -60,12 +60,12 @@
             // 
             // buttonShowUser
             // 
-            this.buttonShowUser.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonShowUser.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShowUser.ForeColor = System.Drawing.Color.Green;
+            this.buttonShowUser.BackColor = System.Drawing.Color.Teal;
+            this.buttonShowUser.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShowUser.ForeColor = System.Drawing.Color.White;
             this.buttonShowUser.Location = new System.Drawing.Point(23, 123);
             this.buttonShowUser.Name = "buttonShowUser";
-            this.buttonShowUser.Size = new System.Drawing.Size(178, 43);
+            this.buttonShowUser.Size = new System.Drawing.Size(200, 43);
             this.buttonShowUser.TabIndex = 2;
             this.buttonShowUser.Text = "Show All User";
             this.buttonShowUser.UseVisualStyleBackColor = false;
@@ -73,12 +73,12 @@
             // 
             // buttonSearchUser
             // 
-            this.buttonSearchUser.BackColor = System.Drawing.SystemColors.Info;
-            this.buttonSearchUser.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSearchUser.ForeColor = System.Drawing.Color.Green;
+            this.buttonSearchUser.BackColor = System.Drawing.Color.Teal;
+            this.buttonSearchUser.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearchUser.ForeColor = System.Drawing.Color.White;
             this.buttonSearchUser.Location = new System.Drawing.Point(23, 172);
             this.buttonSearchUser.Name = "buttonSearchUser";
-            this.buttonSearchUser.Size = new System.Drawing.Size(178, 43);
+            this.buttonSearchUser.Size = new System.Drawing.Size(200, 43);
             this.buttonSearchUser.TabIndex = 3;
             this.buttonSearchUser.Text = "Search User";
             this.buttonSearchUser.UseVisualStyleBackColor = false;

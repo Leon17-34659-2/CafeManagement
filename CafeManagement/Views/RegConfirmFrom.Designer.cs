@@ -39,25 +39,28 @@
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(134, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(485, 43);
+            this.label4.Size = new System.Drawing.Size(465, 42);
             this.label4.TabIndex = 23;
             this.label4.Text = "Registration Successfull";
             // 
             // buttonProcced
             // 
+            this.buttonProcced.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonProcced.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProcced.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonProcced.Location = new System.Drawing.Point(310, 185);
             this.buttonProcced.Name = "buttonProcced";
-            this.buttonProcced.Size = new System.Drawing.Size(80, 30);
+            this.buttonProcced.Size = new System.Drawing.Size(119, 39);
             this.buttonProcced.TabIndex = 24;
             this.buttonProcced.Text = "Proceed";
-            this.buttonProcced.UseVisualStyleBackColor = true;
+            this.buttonProcced.UseVisualStyleBackColor = false;
             this.buttonProcced.Click += new System.EventHandler(this.ProceedBtn_Click);
             // 
             // RegConfirmFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonProcced);
             this.Controls.Add(this.label4);

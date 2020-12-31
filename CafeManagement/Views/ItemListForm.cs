@@ -43,8 +43,6 @@ namespace CafeManagement.Views
 
                         }
 
-
-
                     }
                     else
                     {
@@ -55,8 +53,11 @@ namespace CafeManagement.Views
                 {
                     MessageBox.Show("Enter Integer at Price field");
                     break;
+
+
                 }
             }
+
            
         }
     }

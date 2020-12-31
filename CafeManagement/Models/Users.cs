@@ -103,7 +103,7 @@ namespace CafeManagement.Models
         public bool UpdateUser(User user)
         {
             conn.Open();
-            string query = String.Format("UPDATE Users SET Name='{0}'  WHERE Username='{1}'", user.Name, user.Username);
+            string query = String.Format("UPDATE Users SET Name='{0}'  WHERE Id='{1}'", user.Name, user.Id);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();

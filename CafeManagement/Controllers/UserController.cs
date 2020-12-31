@@ -27,7 +27,7 @@ namespace CafeManagement.Controllers
         {
             User user = new User();
             user.Name = u.Name;
-            user.Username = u.Username;
+            user.Id = u.Id;
             return db.Users.UpdateUser(user);
         }
         public static bool DeleteUser(string username)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeManagement.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,23 @@ namespace CafeManagement.Views
 {
     public partial class CustomerForm : Form
     {
-        public CustomerForm()
+        private User user;
+        public CustomerForm(User user)
         {
             InitializeComponent();
+            this.user = user;
+            this.Show();
+
         }
 
         private void OrderBtn_Click(object sender, EventArgs e)
         {
             new OrderFrom();
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            new EditProfileFrom(user);
         }
     }
 }

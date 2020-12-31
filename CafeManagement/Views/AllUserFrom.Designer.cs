@@ -35,24 +35,27 @@
             // 
             // AllUsersGridView
             // 
-            this.AllUsersGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AllUsersGridView.BackgroundColor = System.Drawing.Color.Teal;
             this.AllUsersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AllUsersGridView.Location = new System.Drawing.Point(0, 57);
+            this.AllUsersGridView.Location = new System.Drawing.Point(204, 48);
             this.AllUsersGridView.Name = "AllUsersGridView";
             this.AllUsersGridView.RowHeadersWidth = 51;
             this.AllUsersGridView.RowTemplate.Height = 24;
-            this.AllUsersGridView.Size = new System.Drawing.Size(797, 390);
+            this.AllUsersGridView.Size = new System.Drawing.Size(337, 390);
             this.AllUsersGridView.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 9);
+            this.label1.BackColor = System.Drawing.Color.AliceBlue;
+            this.label1.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(303, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 26);
+            this.label1.Size = new System.Drawing.Size(153, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "All User List";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AllUserFrom
             // 

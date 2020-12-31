@@ -13,5 +13,10 @@ namespace CafeManagement.Views
             AllUsersGridView.Columns["Password"].Visible = false;
             AllUsersGridView.Columns["Category"].Visible = false;
         }
+
+        private void label1_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

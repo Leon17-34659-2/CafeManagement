@@ -1,41 +1,101 @@
 ﻿using CafeManagement.Controllers;
+using CafeManagement.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CafeManagement.Views
 {
     public partial class EditProfileFrom : Form
     {
-        public EditProfileFrom()
+        User user;
+        public EditProfileFrom(User user)
         {
             InitializeComponent();
+            this.user = user;
+            textBoxNewName.Text = user.Name.Trim();
+            buttonSaveName.Visible = false;
+           // textBoxNewName.Visible = false;
+            label1.Visible = false;
+            label2.Visible = false;
+            textBoxNewPass.Visible = false;
+            textBoxOldPass.Visible = false;
+            buttonSavePass.Visible = false;
+            this.Show();
+
+           
         }
 
-        private void DelBtn_Click(object sender, EventArgs e)
-        {
-            //var r = UserController.DeleteUser(textBoxUsername.Text);
-            //if (r)
-            //{
-            //    tBName.Text = "";
-            //    tBUsername.Text = "";
-            //    MessageBox.Show("Success on Update");
-            //    gridUsers.DataSource = UserController.GetAllUsers();
+        
 
-            //}
-            //else
-            //{
-            //    tBName.Text = "";
-            //    tBUsername.Text = "";
-            //    MessageBox.Show("Can not Delete");
-        //    }
-        //}
-    }
+        private void ChngBtn_Click(object sender, EventArgs e)
+        {
+            textBoxNewName.Enabled = true;
+            buttonSaveName.Visible = true;
+        }
+
+        private void buttonSaveName_Click(object sender, EventArgs e)
+        {
+            if (textBoxNewName.Text.Trim() == "")
+            {
+                MessageBox.Show("Name can not be enmpty!");
+            }
+            else
+            {
+                user.Name = textBoxNewName.Text.Trim();
+                if (UserController.UpdateUser(user))
+                {
+                    MessageBox.Show("Name Updated");
+                    textBoxNewName.Text = textBoxNewName.Text.Trim();
+                    textBoxNewName.Enabled = false;
+                    buttonSaveName.Visible = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("There was an unknown error!!");
+                }
+            }
+        }
+
+        
+
+        private void buttonChngPass_Click(object sender, EventArgs e)
+        {
+            textBoxOldPass.Visible = true;
+            textBoxNewPass.Visible = true;
+            buttonSavePass.Visible = true;
+            label1.Visible = true;
+            label2.Visible = true;
+
+
+        }
+
+        private void buttonSavePass_Click(object sender, EventArgs e)
+        {
+            if(UserController.AuthenticateUser(user.Username, textBoxOldPass.Text.Trim()) == null)
+            {
+                MessageBox.Show("error");
+            }
+            else
+            {
+                user.Password = textBoxOldPass.Text.Trim();
+                if (UserController.UpdateUser(user))
+                {
+                    MessageBox.Show("Passord Updated");
+                    textBoxOldPass.Text = textBoxOldPass.Text.Trim();
+                    textBoxOldPass.Enabled = false;
+                    buttonSavePass.Visible = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("There was an unknown error!!");
+                }
+            }
+        }
+        private void DltBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
