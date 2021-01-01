@@ -32,6 +32,7 @@
             this.buttonAdditem = new System.Windows.Forms.Button();
             this.buttonShowUser = new System.Windows.Forms.Button();
             this.buttonSearchUser = new System.Windows.Forms.Button();
+            this.buttonViewTransection = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +53,7 @@
             this.buttonAdditem.ForeColor = System.Drawing.Color.White;
             this.buttonAdditem.Location = new System.Drawing.Point(23, 74);
             this.buttonAdditem.Name = "buttonAdditem";
-            this.buttonAdditem.Size = new System.Drawing.Size(200, 43);
+            this.buttonAdditem.Size = new System.Drawing.Size(241, 43);
             this.buttonAdditem.TabIndex = 1;
             this.buttonAdditem.Text = "Add Item";
             this.buttonAdditem.UseVisualStyleBackColor = false;
@@ -65,7 +66,7 @@
             this.buttonShowUser.ForeColor = System.Drawing.Color.White;
             this.buttonShowUser.Location = new System.Drawing.Point(23, 123);
             this.buttonShowUser.Name = "buttonShowUser";
-            this.buttonShowUser.Size = new System.Drawing.Size(200, 43);
+            this.buttonShowUser.Size = new System.Drawing.Size(241, 43);
             this.buttonShowUser.TabIndex = 2;
             this.buttonShowUser.Text = "Show All User";
             this.buttonShowUser.UseVisualStyleBackColor = false;
@@ -78,11 +79,24 @@
             this.buttonSearchUser.ForeColor = System.Drawing.Color.White;
             this.buttonSearchUser.Location = new System.Drawing.Point(23, 172);
             this.buttonSearchUser.Name = "buttonSearchUser";
-            this.buttonSearchUser.Size = new System.Drawing.Size(200, 43);
+            this.buttonSearchUser.Size = new System.Drawing.Size(241, 43);
             this.buttonSearchUser.TabIndex = 3;
             this.buttonSearchUser.Text = "Search User";
             this.buttonSearchUser.UseVisualStyleBackColor = false;
             this.buttonSearchUser.Click += new System.EventHandler(this.SearchBtn_Click);
+            // 
+            // buttonViewTransection
+            // 
+            this.buttonViewTransection.BackColor = System.Drawing.Color.Teal;
+            this.buttonViewTransection.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewTransection.ForeColor = System.Drawing.Color.White;
+            this.buttonViewTransection.Location = new System.Drawing.Point(23, 221);
+            this.buttonViewTransection.Name = "buttonViewTransection";
+            this.buttonViewTransection.Size = new System.Drawing.Size(241, 43);
+            this.buttonViewTransection.TabIndex = 4;
+            this.buttonViewTransection.Text = "View Transection";
+            this.buttonViewTransection.UseVisualStyleBackColor = false;
+            this.buttonViewTransection.Click += new System.EventHandler(this.buttonViewTransection_Click);
             // 
             // AdminForm
             // 
@@ -90,6 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonViewTransection);
             this.Controls.Add(this.buttonSearchUser);
             this.Controls.Add(this.buttonShowUser);
             this.Controls.Add(this.buttonAdditem);
@@ -107,5 +122,6 @@
         private System.Windows.Forms.Button buttonAdditem;
         private System.Windows.Forms.Button buttonShowUser;
         private System.Windows.Forms.Button buttonSearchUser;
+        private System.Windows.Forms.Button buttonViewTransection;
     }
 }

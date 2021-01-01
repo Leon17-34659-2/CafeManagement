@@ -18,3 +18,5 @@ C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManageme
 C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManagement.Views.ItemListForm.resources
 C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManagement.Views.SearchUserFrom.resources
 C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManagement.Views.OrderFrom.resources
+C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManagement.Views.ConfirmOrderFrom.resources
+C:\Users\shahi\source\repos\CafeManagement\CafeManagement\obj\Debug\CafeManagement.Views.TransectionForm.resources

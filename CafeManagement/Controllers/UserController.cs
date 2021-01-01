@@ -30,17 +30,20 @@ namespace CafeManagement.Controllers
             user.Id = u.Id;
             return db.Users.UpdateUser(user);
         }
-        public static bool DeleteUser(string username)
+        public static bool DeleteUser(int id)
         {
-            return db.Users.DeleteUser(username);
+            return db.Users.DeleteUser(id);
         }
         public static ArrayList GetAllUsers()
         {
             return db.Users.GetAllUsers();
         }
 
+        public static bool UpdatePassword(User user)
+        {
+            return db.Users.UpdatePassword(user);
+        }
 
 
-       
     }
 }

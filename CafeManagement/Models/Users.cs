@@ -55,6 +55,7 @@ namespace CafeManagement.Models
                 user = new User();
                 user.Id = reader.GetInt32(reader.GetOrdinal("Id"));
                 user.Name = reader.GetString(reader.GetOrdinal("Name"));
+                user.Username = reader.GetString(reader.GetOrdinal("Username"));
                 user.Category = reader.GetInt32(reader.GetOrdinal("Category"));
                 user.Password = reader.GetString(reader.GetOrdinal("Password"));
             }
@@ -110,10 +111,20 @@ namespace CafeManagement.Models
             if (r > 0) return true;
             return false;
         }
-        public bool DeleteUser(string username)
+        public bool DeleteUser(int id)
         {
             conn.Open();
-            string query = String.Format("DELETE FROM Users WHERE Username='{0}'", username);
+            string query = String.Format("DELETE FROM Users WHERE Id='{0}'", id);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            if (r > 0) return true;
+            return false;
+        }
+        public bool UpdatePassword(User user)
+        {
+            conn.Open();
+            string query = String.Format("UPDATE Users SET Password='{0}'  WHERE Id='{1}'", user.Password, user.Id);
             SqlCommand cmd = new SqlCommand(query, conn);
             int r = cmd.ExecuteNonQuery();
             conn.Close();

@@ -33,5 +33,10 @@ namespace CafeManagement.Views
 
         new  SearchUserFrom().Show();
         }
+
+        private void buttonViewTransection_Click(object sender, EventArgs e)
+        {
+            new TransectionForm().Show();
+        }
     }
 }

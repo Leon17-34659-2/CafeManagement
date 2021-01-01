@@ -1,10 +1,6 @@
 ﻿using CafeManagement.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Collections;
 
 namespace CafeManagement.Controllers
 {
@@ -19,6 +15,14 @@ namespace CafeManagement.Controllers
 
             return db.Items.AddItem(item);
 
+        }
+        public static ArrayList GetAllItems()
+        {
+            return db.Items.GetAllItems();
+        }
+        public static Item GetItemDetails(int id)
+        {
+            return db.Items.GetItemDetails(id);
         }
     }
 }

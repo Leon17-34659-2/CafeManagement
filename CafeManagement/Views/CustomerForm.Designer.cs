@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAdditem = new System.Windows.Forms.Button();
+            this.buttonOrderFood = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -46,18 +46,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome To Customer Page";
             // 
-            // buttonAdditem
+            // buttonOrderFood
             // 
-            this.buttonAdditem.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonAdditem.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdditem.ForeColor = System.Drawing.Color.White;
-            this.buttonAdditem.Location = new System.Drawing.Point(342, 159);
-            this.buttonAdditem.Name = "buttonAdditem";
-            this.buttonAdditem.Size = new System.Drawing.Size(215, 43);
-            this.buttonAdditem.TabIndex = 2;
-            this.buttonAdditem.Text = "Order Food";
-            this.buttonAdditem.UseVisualStyleBackColor = false;
-            this.buttonAdditem.Click += new System.EventHandler(this.OrderBtn_Click);
+            this.buttonOrderFood.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonOrderFood.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrderFood.ForeColor = System.Drawing.Color.White;
+            this.buttonOrderFood.Location = new System.Drawing.Point(342, 159);
+            this.buttonOrderFood.Name = "buttonOrderFood";
+            this.buttonOrderFood.Size = new System.Drawing.Size(215, 43);
+            this.buttonOrderFood.TabIndex = 2;
+            this.buttonOrderFood.Text = "Order Food";
+            this.buttonOrderFood.UseVisualStyleBackColor = false;
+            this.buttonOrderFood.Click += new System.EventHandler(this.OrderBtn_Click);
             // 
             // button1
             // 
@@ -92,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonAdditem);
+            this.Controls.Add(this.buttonOrderFood);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CustomerForm";
@@ -105,7 +105,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonAdditem;
+        private System.Windows.Forms.Button buttonOrderFood;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

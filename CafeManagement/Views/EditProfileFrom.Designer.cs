@@ -45,9 +45,9 @@
             this.buttonChng.BackColor = System.Drawing.Color.Teal;
             this.buttonChng.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChng.ForeColor = System.Drawing.Color.White;
-            this.buttonChng.Location = new System.Drawing.Point(12, 46);
+            this.buttonChng.Location = new System.Drawing.Point(12, 38);
             this.buttonChng.Name = "buttonChng";
-            this.buttonChng.Size = new System.Drawing.Size(202, 32);
+            this.buttonChng.Size = new System.Drawing.Size(202, 47);
             this.buttonChng.TabIndex = 15;
             this.buttonChng.Text = "  Change Name  ";
             this.buttonChng.UseVisualStyleBackColor = false;
@@ -57,7 +57,7 @@
             // 
             this.textBoxNewName.Enabled = false;
             this.textBoxNewName.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewName.Location = new System.Drawing.Point(251, 48);
+            this.textBoxNewName.Location = new System.Drawing.Point(229, 46);
             this.textBoxNewName.Name = "textBoxNewName";
             this.textBoxNewName.Size = new System.Drawing.Size(181, 27);
             this.textBoxNewName.TabIndex = 16;
@@ -67,9 +67,9 @@
             this.buttonSaveName.BackColor = System.Drawing.Color.Green;
             this.buttonSaveName.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSaveName.ForeColor = System.Drawing.Color.White;
-            this.buttonSaveName.Location = new System.Drawing.Point(466, 46);
+            this.buttonSaveName.Location = new System.Drawing.Point(428, 38);
             this.buttonSaveName.Name = "buttonSaveName";
-            this.buttonSaveName.Size = new System.Drawing.Size(153, 29);
+            this.buttonSaveName.Size = new System.Drawing.Size(181, 47);
             this.buttonSaveName.TabIndex = 17;
             this.buttonSaveName.Text = "Save Name";
             this.buttonSaveName.UseVisualStyleBackColor = false;
@@ -80,9 +80,9 @@
             this.buttonSavePass.BackColor = System.Drawing.Color.Green;
             this.buttonSavePass.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSavePass.ForeColor = System.Drawing.Color.White;
-            this.buttonSavePass.Location = new System.Drawing.Point(466, 140);
+            this.buttonSavePass.Location = new System.Drawing.Point(624, 97);
             this.buttonSavePass.Name = "buttonSavePass";
-            this.buttonSavePass.Size = new System.Drawing.Size(153, 29);
+            this.buttonSavePass.Size = new System.Drawing.Size(153, 44);
             this.buttonSavePass.TabIndex = 20;
             this.buttonSavePass.Text = "Save Password";
             this.buttonSavePass.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             // textBoxOldPass
             // 
             this.textBoxOldPass.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOldPass.Location = new System.Drawing.Point(251, 107);
+            this.textBoxOldPass.Location = new System.Drawing.Point(229, 107);
             this.textBoxOldPass.Name = "textBoxOldPass";
             this.textBoxOldPass.PasswordChar = '#';
             this.textBoxOldPass.Size = new System.Drawing.Size(181, 27);
@@ -102,9 +102,9 @@
             this.buttonChngPass.BackColor = System.Drawing.Color.Teal;
             this.buttonChngPass.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChngPass.ForeColor = System.Drawing.Color.White;
-            this.buttonChngPass.Location = new System.Drawing.Point(12, 105);
+            this.buttonChngPass.Location = new System.Drawing.Point(12, 97);
             this.buttonChngPass.Name = "buttonChngPass";
-            this.buttonChngPass.Size = new System.Drawing.Size(202, 29);
+            this.buttonChngPass.Size = new System.Drawing.Size(202, 44);
             this.buttonChngPass.TabIndex = 18;
             this.buttonChngPass.Text = "Change Password";
             this.buttonChngPass.UseVisualStyleBackColor = false;
@@ -113,7 +113,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(287, 89);
+            this.label1.Location = new System.Drawing.Point(267, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 17);
             this.label1.TabIndex = 21;
@@ -122,7 +122,7 @@
             // textBoxNewPass
             // 
             this.textBoxNewPass.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNewPass.Location = new System.Drawing.Point(438, 107);
+            this.textBoxNewPass.Location = new System.Drawing.Point(428, 107);
             this.textBoxNewPass.Name = "textBoxNewPass";
             this.textBoxNewPass.Size = new System.Drawing.Size(181, 27);
             this.textBoxNewPass.TabIndex = 22;
@@ -130,7 +130,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(475, 89);
+            this.label2.Location = new System.Drawing.Point(465, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 17);
             this.label2.TabIndex = 23;
@@ -141,9 +141,9 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 184);
+            this.button1.Location = new System.Drawing.Point(12, 167);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 29);
+            this.button1.Size = new System.Drawing.Size(202, 47);
             this.button1.TabIndex = 24;
             this.button1.Text = "Delete Account";
             this.button1.UseVisualStyleBackColor = false;

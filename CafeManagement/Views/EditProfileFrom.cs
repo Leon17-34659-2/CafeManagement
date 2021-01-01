@@ -8,13 +8,15 @@ namespace CafeManagement.Views
     public partial class EditProfileFrom : Form
     {
         User user;
-        public EditProfileFrom(User user)
+        CustomerForm parent;
+        public EditProfileFrom(User user, CustomerForm parent)
         {
             InitializeComponent();
             this.user = user;
+            this.parent = parent;
             textBoxNewName.Text = user.Name.Trim();
             buttonSaveName.Visible = false;
-           // textBoxNewName.Visible = false;
+            //textBoxNewName.Visible = false;
             label1.Visible = false;
             label2.Visible = false;
             textBoxNewPass.Visible = false;
@@ -72,30 +74,49 @@ namespace CafeManagement.Views
 
         private void buttonSavePass_Click(object sender, EventArgs e)
         {
-            if(UserController.AuthenticateUser(user.Username, textBoxOldPass.Text.Trim()) == null)
-            {
-                MessageBox.Show("error");
-            }
-            else
-            {
-                user.Password = textBoxOldPass.Text.Trim();
-                if (UserController.UpdateUser(user))
+            if (user.Password.Trim() == textBoxOldPass.Text.Trim())
+            {   
+                if (textBoxNewPass.Text.Trim() != "")
                 {
-                    MessageBox.Show("Passord Updated");
-                    textBoxOldPass.Text = textBoxOldPass.Text.Trim();
-                    textBoxOldPass.Enabled = false;
-                    buttonSavePass.Visible = false;
-
+                    user.Password = textBoxNewPass.Text.Trim();
+                    if (UserController.UpdatePassword(user))
+                    {
+                        MessageBox.Show("Password updaed");
+                        textBoxOldPass.Visible = false;
+                        textBoxNewPass.Visible = false;
+                        buttonSavePass.Visible = false;
+                        label1.Visible = false;
+                        label2.Visible = false;
+                        textBoxOldPass.Text = "";
+                        textBoxNewPass.Text = "";
+                    }
+                    else
+                    {
+                        user.Password = textBoxOldPass.Text.Trim();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("There was an unknown error!!");
+                    MessageBox.Show("Enter a new password to update");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Old Password!!");
             }
         }
         private void DltBtn_Click(object sender, EventArgs e)
         {
-
+            if (UserController.DeleteUser(user.Id))
+            {
+                MessageBox.Show("Your Account has been deleted!!");
+                parent.Terminate();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Go fuck yourself!!");
+            }
         }
     }
 }

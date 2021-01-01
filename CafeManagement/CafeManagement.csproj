@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Controllers\TransectionController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -57,6 +58,8 @@
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Items.cs" />
+    <Compile Include="Models\Transection.cs" />
+    <Compile Include="Models\Transections.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +75,12 @@
     </Compile>
     <Compile Include="Views\AllUserFrom.Designer.cs">
       <DependentUpon>AllUserFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfirmOrderFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ConfirmOrderFrom.Designer.cs">
+      <DependentUpon>ConfirmOrderFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomerForm.cs">
       <SubType>Form</SubType>
@@ -121,6 +130,12 @@
     <Compile Include="Views\SearchUserFrom.Designer.cs">
       <DependentUpon>SearchUserFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TransectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TransectionForm.Designer.cs">
+      <DependentUpon>TransectionForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AllUserFrom.resx">
       <DependentUpon>AllUserFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConfirmOrderFrom.resx">
+      <DependentUpon>ConfirmOrderFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
@@ -162,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchUserFrom.resx">
       <DependentUpon>SearchUserFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransectionForm.resx">
+      <DependentUpon>TransectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

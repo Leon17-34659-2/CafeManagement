@@ -1,12 +1,5 @@
 ﻿using CafeManagement.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CafeManagement.Views
@@ -24,12 +17,16 @@ namespace CafeManagement.Views
 
         private void OrderBtn_Click(object sender, EventArgs e)
         {
-            new OrderFrom();
+            new OrderFrom(user).Show();
         }
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            new EditProfileFrom(user);
+            new EditProfileFrom(user, this);
+        }
+        public void Terminate()
+        {
+            this.Close();
         }
     }
 }
