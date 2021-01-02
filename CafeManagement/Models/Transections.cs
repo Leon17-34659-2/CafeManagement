@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CafeManagement.Models
 {
@@ -41,12 +38,12 @@ namespace CafeManagement.Models
             while (reader.Read())
             {
                Transection transection = new Transection();
-                transection = new Transection();
 
+                transection.Transection_Id = reader.GetInt32(reader.GetOrdinal("Transection_Id"));
                 transection.User_Id = reader.GetInt32(reader.GetOrdinal("User_Id"));
-              //transection.User_Name = reader.GetString(reader.GetOrdinal("User_Name "));
-              //transection.Amount = reader.GetInt32(reader.GetOrdinal("Amount"));
-             // transection.Date_Time = reader.GetString(reader.GetOrdinal("Date_Time"));
+                transection.User_Name = reader.GetString(reader.GetOrdinal("User_Name"));
+                transection.Amount = reader.GetInt32(reader.GetOrdinal("Amount"));
+                transection.Date_Time = reader.GetDateTime(reader.GetOrdinal("Date_Time"));
                 transections.Add(transection);
             }
             conn.Close();

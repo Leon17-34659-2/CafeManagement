@@ -19,7 +19,8 @@ namespace CafeManagement.Views
 
             if (username != "" || password != "")
             {
-
+                
+          
 
                 if (r != null)
 
@@ -29,6 +30,7 @@ namespace CafeManagement.Views
                     if (r.Category == 0)
                     {
                         new AdminForm().Show();
+
                     }
                     if (r.Category == 1)
                     {

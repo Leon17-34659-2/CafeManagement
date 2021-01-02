@@ -35,11 +35,11 @@
             // TransectiondataGridView
             // 
             this.TransectiondataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TransectiondataGridView.Location = new System.Drawing.Point(121, 25);
+            this.TransectiondataGridView.Location = new System.Drawing.Point(1, 25);
             this.TransectiondataGridView.Name = "TransectiondataGridView";
             this.TransectiondataGridView.RowHeadersWidth = 51;
             this.TransectiondataGridView.RowTemplate.Height = 24;
-            this.TransectiondataGridView.Size = new System.Drawing.Size(531, 393);
+            this.TransectiondataGridView.Size = new System.Drawing.Size(803, 393);
             this.TransectiondataGridView.TabIndex = 0;
             // 
             // TransectionForm

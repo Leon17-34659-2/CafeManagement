@@ -52,7 +52,6 @@ namespace CafeManagement.Models
             while (reader.Read())
             {
                 Item item = new Item();
-                item = new Item();
                 
                 item.Id = reader.GetInt32(reader.GetOrdinal("Id"));
                 item.ItemName = reader.GetString(reader.GetOrdinal("ItemName"));
