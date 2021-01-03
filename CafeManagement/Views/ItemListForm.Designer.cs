@@ -41,9 +41,10 @@
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(39, 92);
+            this.label1.Location = new System.Drawing.Point(29, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 26);
+            this.label1.Size = new System.Drawing.Size(107, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Item Name";
             // 
@@ -53,36 +54,42 @@
             this.label2.BackColor = System.Drawing.Color.Navy;
             this.label2.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(102, 144);
+            this.label2.Location = new System.Drawing.Point(76, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 26);
+            this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Price";
             // 
             // textBoxItemName
             // 
             this.textBoxItemName.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxItemName.Location = new System.Drawing.Point(214, 92);
+            this.textBoxItemName.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxItemName.Location = new System.Drawing.Point(160, 75);
+            this.textBoxItemName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxItemName.Name = "textBoxItemName";
-            this.textBoxItemName.Size = new System.Drawing.Size(131, 22);
+            this.textBoxItemName.Size = new System.Drawing.Size(133, 22);
             this.textBoxItemName.TabIndex = 2;
             // 
             // textBoxPrice
             // 
             this.textBoxPrice.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxPrice.Location = new System.Drawing.Point(214, 148);
+            this.textBoxPrice.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPrice.Location = new System.Drawing.Point(160, 120);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(131, 22);
+            this.textBoxPrice.Size = new System.Drawing.Size(133, 22);
             this.textBoxPrice.TabIndex = 3;
             // 
             // buttonItemAdded
             // 
-            this.buttonItemAdded.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonItemAdded.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonItemAdded.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.buttonItemAdded.Location = new System.Drawing.Point(214, 185);
+            this.buttonItemAdded.BackColor = System.Drawing.Color.Green;
+            this.buttonItemAdded.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonItemAdded.ForeColor = System.Drawing.Color.White;
+            this.buttonItemAdded.Location = new System.Drawing.Point(160, 150);
+            this.buttonItemAdded.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonItemAdded.Name = "buttonItemAdded";
-            this.buttonItemAdded.Size = new System.Drawing.Size(131, 32);
+            this.buttonItemAdded.Size = new System.Drawing.Size(133, 26);
             this.buttonItemAdded.TabIndex = 4;
             this.buttonItemAdded.Text = "Add";
             this.buttonItemAdded.UseVisualStyleBackColor = false;
@@ -90,15 +97,16 @@
             // 
             // ItemListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.buttonItemAdded);
             this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.textBoxItemName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ItemListForm";
             this.Text = "ItemListForm";
             this.ResumeLayout(false);

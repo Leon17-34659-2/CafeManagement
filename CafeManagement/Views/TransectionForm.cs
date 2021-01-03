@@ -17,7 +17,7 @@ namespace CafeManagement.Views
         {
             InitializeComponent();
             TransectiondataGridView.DataSource = TransectionController.ViewTransection();
-
+            
         }
     }
 }
